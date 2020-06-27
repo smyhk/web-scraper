@@ -1,4 +1,5 @@
 import requests
+import pprint
 from bs4 import BeautifulSoup
 
 res = requests.get("https://news.ycombinator.com/")
@@ -24,4 +25,4 @@ def create_custom_hn(links, subtext):
     return hn
 
 
-print(create_custom_hn(links, subtext))
+pprint.pprint(create_custom_hn(links, subtext))
